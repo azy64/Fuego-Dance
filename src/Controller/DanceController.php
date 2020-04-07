@@ -22,7 +22,8 @@ class DanceController extends AbstractController
      */
     public function getAllVideos(){
 
-        $v=$this->retourneAllVideos([$this->root,"/home/azaria/Documents","/home/azaria/Downloads"],array());
+        $v=$this->retourneAllVideos(["/home/azaria/Downloads"],array());
+        var_dump($v);
         return $this->json(json_encode($v));
 
     }
@@ -43,7 +44,7 @@ class DanceController extends AbstractController
                 }
             }
             //unset($dir_list[array_search($dir,$dir_list)]);
-            unset($dir);
+            //unset($dir);
 
         }
         $this->retourneAllVideos($tab_dir,$vf);
