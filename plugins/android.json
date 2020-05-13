@@ -1,0 +1,40 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-device-motion": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    }
+  },
+  "dependent_plugins": {}
+}
