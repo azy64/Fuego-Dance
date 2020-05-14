@@ -1,11 +1,14 @@
-
+@font-face {
+    font-family: "comic sans";
+    src: url("../fonts/ComicSansMS3.ttf");
+   }
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-family:'comic sans', system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
     
     height:100vh;
     margin:0px;
@@ -31,19 +34,54 @@ body {
     overflow: hidden;
     width: 100% !important;
     height: 100% !important;
-   
-}
-#tunaweza_first{
     background-image:linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),url("../img/Dance.png");
     background-position:center top;
     background-size: cover;
-    z-index: 2;
+   
+}
+#tunaweza_first{
+   
+    z-index: 4;
     padding-top: 25%;
     
 }
 #tunaweza_second{
-    background: #ccc;
+    z-index: 3;
+    /*border:5px solid red;*/
+}
+#tunaweza_third,#tunaweza_fourth{
+    position: fixed !important;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    width: 100% !important;
+    height: 100% !important;
     z-index: 1;
+}
+#tunaweza_third .tunaweza_bar, #tunaweza_fourth .tunaweza_bar{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0px;
+    left: 0px;
+    /*background: rgba(0,0,0,0.5);*/
+    background: #ED008C;
+}
+#tunaweza_third .tunaweza_container_content,#tunaweza_fourth .tunaweza_container_content{
+    position: absolute;
+    top: 5%;
+    left: 0px;
+    width: 100%;
+    height: 95%;
+    background-image:linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),url("../img/Dance.png");
+    background-position:center top;
+    background-size: cover;
+}
+#tunaweza_content,#tunaweza_content_fourth{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgba(255,255, 255,.6);
 }
 #tunaweza_second .tunaweza_nav{
     width: 100%;
@@ -95,6 +133,13 @@ body {
     /*border-bottom: solid rgba(255,255,255,.2)*/
 
 }
+.tunaweza_block_tail{
+   
+    display: block;
+    min-height: 150px;
+    /*border: red 1px solid;*/
+    width: 100%;
+}
 
 .tunaweza_nav_bar .tunaweza_nav_bar_scroll{
     height: 100%;
@@ -113,6 +158,18 @@ body {
     line-height: 50px;
     font-size: 20px;
     cursor: pointer;
+}
+.tunaweza_button_menu{
+    background: #ED008C;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    width: 50%;
+    line-height: 60px;
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: 50px;
+    font-family:'comic sans';
 }
 .initial_pl{
     margin-left: 0%;
@@ -151,10 +208,10 @@ body {
     height: 100%;
     /*background: red;*/
 }
-.tunaweza_contener_content .tunaweza_content{
+/*.tunaweza_contener_content .tunaweza_content{
     display: inline-block;
     width: 33%;
     height: 100%;
     padding-left: 7px;
 
-}
+}*/

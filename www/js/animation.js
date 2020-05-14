@@ -68,11 +68,29 @@ $("#menu3").click(function(event){
 });
 
 function rightToLeft(el1){
-    $("#"+el1).animate({"left":"-2px"});
+    $("#"+el1).animate({"left":"-100%"});
 }
 function leftToRight(el1){
-    $("#"+el1).animate({"left":"100%"});
+    $("#"+el1).animate({"left":"0%"});
 }
+$("#m1").click(function(){
+    $("#tunaweza_fourth").css("zIndex",1);
+    $("#tunaweza_third").css("zIndex",2)
+    rightToLeft("tunaweza_second");
+});
+$("#m2").click(function(){
+    $("#tunaweza_content_fourth").load("about.html");
+    $("#title").text("About Fuego Dance");
+    $("#tunaweza_fourth").css("zIndex",2);
+    $("#tunaweza_third").css("zIndex",1)
+    rightToLeft("tunaweza_second");
+});
+$("#retour").click(function(){
+    leftToRight("tunaweza_second");
+});
+$("#retoure").click(function(){
+    leftToRight("tunaweza_second");
+});
 ///here are implemented the swipe event-----------------------
 
 

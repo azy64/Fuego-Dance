@@ -1,6 +1,6 @@
 localStorage.setItem("serverName","http://fuegodance.com.au/public/");
 localStorage.setItem("lastPost","");
-localStorage.setItem("contentElement","");
+localStorage.setItem("contentElement","tunaweza_content");
 Setting={};
 
 Setting.getLastPostLoaded=function(posts){
@@ -43,35 +43,39 @@ return w;
 }
 Setting.envelopePost=function(posts){
     let messages="";
+    //console.log("la fonction envelopePost");
+    //console.log(posts);
     for(post in posts){
-
-        if(post.type=="text"){
-            messages+='<div class="bulle-container" id="'+post.id+'">'+
+        console.log("le type :"+posts[post].type);
+        if(posts[post].type=="text"){
+            messages+='<div class="bulle-container" id="'+posts[post].id+'">'+
             
-            '<p>'+post.contents+'</p>'+
-            post.date+
+            '<p>'+posts[post].contents+'</p>'+
+            posts[post].date+
           '</div>';
+          
         }
-        if(post.type=="image"){
-            messages+='<div class="bulle-container" id="'+post.id+'">'+
-            '<img src="'+post.contents+'" width="100%" class="img-rounded">'+
+        if(posts[post].type=="image"){
+            messages+='<div class="bulle-container" id="'+posts[post].id+'">'+
+            '<img src="'+posts[post].contents+'" width="100%" class="img-rounded">'+
             //'<p>'+post.contents+'</p>'+
-            post.date+
+            posts[post].date+
           '</div>';
         }
-        if(post.type=="video"){
-            messages+='<div class="bulle-container" id="'+post.id+'">'+
+        if(posts[post].type=="video"){
+            messages+='<div class="bulle-container" id="'+posts[post].id+'">'+
             '<video controls width="100%">'+
 
-            '<source src="/'+post.contents+'">'+
+            '<source src="/'+posts[post].contents+'">'+
         
             //<source src="/media/examples/flower.mp4" type="video/mp4">
         
             "Sorry, your browser doesn't support embedded videos."+
         '</video>'+
-            post.date+
+        posts[post].date+
           '</div>';
         }
+        console.log(messages);
     }
     return messages;
 }
@@ -85,11 +89,12 @@ Setting.loadPosts=function(){
             //console.log(Setting.getLastPostLoaded(posts));
             Setting.getLastPostLoaded(posts);
             let contenu=Setting.envelopePost(posts);
+            //console.log("voici les messages:"+contenu);
             let cnt=localStorage.getItem("contentElement");
             let w=Setting.Welcome();
             console.log("we are loading the new messages...");
-            //$("#"+cnt).append(contenu);
-            //$("#"+cnt).prepend(w);
+            $("#"+cnt).append(contenu);
+            $("#"+cnt).prepend(w);
             setInterval(Setting.getNewPost,20000);
 
         }
