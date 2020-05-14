@@ -56,14 +56,13 @@ Setting.envelopePost=function(posts){
           
         }
         if(posts[post].type=="image"){
-            messages+='<div class="bulle-container" id="'+posts[post].id+'">'+
+            messages+='<div class="bulle-container text-center" id="'+posts[post].id+'">'+
             '<img src="'+posts[post].contents+'" width="100%" class="img-rounded">'+
-            //'<p>'+post.contents+'</p>'+
             posts[post].date+
           '</div>';
         }
         if(posts[post].type=="video"){
-            messages+='<div class="bulle-container" id="'+posts[post].id+'">'+
+            messages+='<div class="bulle-container text-center" id="'+posts[post].id+'">'+
             '<video controls width="100%">'+
 
             '<source src="/'+posts[post].contents+'">'+

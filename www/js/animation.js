@@ -85,6 +85,13 @@ $("#m2").click(function(){
     $("#tunaweza_third").css("zIndex",1)
     rightToLeft("tunaweza_second");
 });
+$("#m3").click(function(){
+    $("#tunaweza_content_fourth").load("contact.html");
+    $("#title").text("Get in Touch");
+    $("#tunaweza_fourth").css("zIndex",2);
+    $("#tunaweza_third").css("zIndex",1)
+    rightToLeft("tunaweza_second");
+});
 $("#retour").click(function(){
     leftToRight("tunaweza_second");
 });

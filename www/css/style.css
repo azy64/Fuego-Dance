@@ -215,3 +215,28 @@ body {
     padding-left: 7px;
 
 }*/
+
+/*here we define css about message box*/
+.bulle-container{
+    width: 80%;
+    border:1px solid #999;
+    box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, .4);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(0,0,255,0.5);
+    color: #fff;
+    padding: 9px;
+}
+.bulle-container img, .bulle-container video{
+    width:80%;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.bulle-container .time{
+    display: block;
+    text-align: right;
+    padding: 5px;
+}
