@@ -29,7 +29,21 @@ $(document).on("pagecreate","#slide",function() {
 
 //login-----------------------------------
 $("#login").click(function(event){
-    $("#tunaweza_first").fadeOut();
+    let email=$("#email").val();
+    let pass=$("#password").val();
+    let server=localStorage.getItem("serverName");
+    console.log("identifiant:"+email+pass)
+    $.getJSON(server+"getstudent/"+email+"/"+pass+"",function(data, statut){
+        data=JSON.parse(data);
+        if(data!=null){
+            localStorage.setItem("user",JSON.stringify(data))
+            Setting.loadPosts();
+            $("#tunaweza_first").fadeOut();
+        }
+        console.log(data.login);
+    });
+    
+    //$("#tunaweza_first").fadeOut();
     event.preventDefault();
 
 });
@@ -53,6 +67,37 @@ $("#menu3").click(function(event){
     event.preventDefault();
 });
 
+function rightToLeft(el1){
+    $("#"+el1).animate({"left":"-100%"});
+}
+function leftToRight(el1){
+    $("#"+el1).animate({"left":"0%"});
+}
+$("#m1").click(function(){
+    $("#tunaweza_fourth").css("zIndex",1);
+    $("#tunaweza_third").css("zIndex",2)
+    rightToLeft("tunaweza_second");
+});
+$("#m2").click(function(){
+    $("#tunaweza_content_fourth").load("about.html");
+    $("#title").text("About Fuego Dance");
+    $("#tunaweza_fourth").css("zIndex",2);
+    $("#tunaweza_third").css("zIndex",1)
+    rightToLeft("tunaweza_second");
+});
+$("#m3").click(function(){
+    $("#tunaweza_content_fourth").load("contact.html");
+    $("#title").text("Get in Touch");
+    $("#tunaweza_fourth").css("zIndex",2);
+    $("#tunaweza_third").css("zIndex",1)
+    rightToLeft("tunaweza_second");
+});
+$("#retour").click(function(){
+    leftToRight("tunaweza_second");
+});
+$("#retoure").click(function(){
+    leftToRight("tunaweza_second");
+});
 ///here are implemented the swipe event-----------------------
 
 

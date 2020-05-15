@@ -65,7 +65,7 @@ Setting.envelopePost=function(posts){
             messages+='<div class="bulle-container text-center" id="'+posts[post].id+'">'+
             '<video controls width="100%">'+
 
-            '<source src="'+posts[post].contents+'">'+
+            '<source src="/'+posts[post].contents+'">'+
         
             //<source src="/media/examples/flower.mp4" type="video/mp4">
         
