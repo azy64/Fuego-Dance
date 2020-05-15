@@ -2,7 +2,15 @@ localStorage.setItem("serverName","http://fuegodance.com.au/public/");
 localStorage.setItem("lastPost","");
 localStorage.setItem("contentElement","tunaweza_content");
 Setting={};
-
+Setting.loadTunawezaEvent=function(){
+    
+    $(".bulle-container img").click(function(){
+        console.log("je viens de clicker sur une image");
+        let src=$(this).attr("src");
+        $("#visuel img").attr("src",src);
+        $("#visuel img").fadeIn();
+    });
+}
 Setting.getLastPostLoaded=function(posts){
     let el=posts[0];
     for(post in posts){
@@ -57,7 +65,7 @@ Setting.envelopePost=function(posts){
         }
         if(posts[post].type=="image"){
             messages+='<div class="bulle-container text-center" id="'+posts[post].id+'">'+
-            '<img src="'+posts[post].contents+'" width="100%" class="img-rounded">'+
+            '<img onclick="loadTunawezaEvent(this)" src="'+posts[post].contents+'" width="100%" class="img-rounded">'+
             posts[post].date+
           '</div>';
         }
