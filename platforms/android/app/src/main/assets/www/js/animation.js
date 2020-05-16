@@ -98,8 +98,20 @@ $("#retour").click(function(){
 $("#retoure").click(function(){
     leftToRight("tunaweza_second");
 });
-///here are implemented the swipe event-----------------------
 
+$("#visuel").click(function(){
+    $(this).fadeOut();
+});
+///here are implemented the swipe event-----------------------
+function loadTunawezaEvent(m){
+    console.log("je viens de clicker sur une image");
+    let src=$(m).attr("src");
+    console.log(src);
+    $("#visuel img").attr("src",src);
+    //console.log("#visuel img sa source:"+$("#visuel img").attr("src"));
+    $("#visuel").fadeIn();
+
+}
 
 
 

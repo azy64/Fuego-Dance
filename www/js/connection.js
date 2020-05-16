@@ -1,11 +1,12 @@
 localStorage.setItem("serverName","http://fuegodance.com.au/public/");
 localStorage.setItem("lastPost","");
 localStorage.setItem("contentElement","tunaweza_content");
+let BACK_TO_MENU=0;
 Setting={};
 Setting.loadTunawezaEvent=function(){
     
     $(".bulle-container img").click(function(){
-        console.log("je viens de clicker sur une image");
+        //console.log("je viens de clicker sur une image");
         let src=$(this).attr("src");
         $("#visuel img").attr("src",src);
         $("#visuel img").fadeIn();
@@ -26,7 +27,7 @@ Setting.getNewPost=function(){
     let id =last.id;
     //console.log(last);
     $.getJSON(localStorage.getItem("serverName")+"getPostsAfter/"+id,function(posts,status){
-        console.log("ici commence la tache pour recuperer les nouveaux posts")
+        //console.log("ici commence la tache pour recuperer les nouveaux posts")
         //console.log(posts);
         if(posts.length>0){
             //console.log("=================================");
@@ -54,7 +55,7 @@ Setting.envelopePost=function(posts){
     //console.log("la fonction envelopePost");
     //console.log(posts);
     for(post in posts){
-        console.log("le type :"+posts[post].type);
+        //console.log("le type :"+posts[post].type);
         if(posts[post].type=="text"){
             messages+='<div class="bulle-container" id="'+posts[post].id+'">'+
             
@@ -82,14 +83,14 @@ Setting.envelopePost=function(posts){
         posts[post].date+
           '</div>';
         }
-        console.log(messages);
+        //console.log(messages);
     }
     return messages;
 }
 Setting.loadPosts=function(){
     $.getJSON(localStorage.getItem("serverName")+"getPost",function(posts,status){
-        console.log("voici les postes:");
-        console.log(posts);
+        //console.log("voici les postes:");
+        //console.log(posts);
         //console.log("voici le dernier post:");
         
         if(posts.length>0){
