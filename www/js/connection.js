@@ -35,7 +35,7 @@ Setting.getNewPost=function(){
             Setting.getLastPostLoaded(posts);
             let contenu=Setting.envelopePost(posts);
             let cnt=localStorage.getItem("contentElement");
-            $("#"+welcome).fadeIn();
+            $("#welcome").fadeOut();
             $("#"+cnt).prepend(contenu);
 
         }
