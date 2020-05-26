@@ -33,6 +33,83 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
+      "id": "cordova-plugin-contacts.contacts",
+      "file": "plugins/cordova-plugin-contacts/www/contacts.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "navigator.contacts"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.Contact",
+      "file": "plugins/cordova-plugin-contacts/www/Contact.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "Contact"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.convertUtils",
+      "file": "plugins/cordova-plugin-contacts/www/convertUtils.js",
+      "pluginId": "cordova-plugin-contacts"
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactAddress",
+      "file": "plugins/cordova-plugin-contacts/www/ContactAddress.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "ContactAddress"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactError",
+      "file": "plugins/cordova-plugin-contacts/www/ContactError.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "ContactError"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactField",
+      "file": "plugins/cordova-plugin-contacts/www/ContactField.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "ContactField"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactFindOptions",
+      "file": "plugins/cordova-plugin-contacts/www/ContactFindOptions.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "ContactFindOptions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactName",
+      "file": "plugins/cordova-plugin-contacts/www/ContactName.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "ContactName"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactOrganization",
+      "file": "plugins/cordova-plugin-contacts/www/ContactOrganization.js",
+      "pluginId": "cordova-plugin-contacts",
+      "clobbers": [
+        "ContactOrganization"
+      ]
+    },
+    {
+      "id": "cordova-plugin-contacts.ContactFieldType",
+      "file": "plugins/cordova-plugin-contacts/www/ContactFieldType.js",
+      "pluginId": "cordova-plugin-contacts",
+      "merges": [
+        ""
+      ]
+    },
+    {
       "id": "cordova-plugin-device-motion.Acceleration",
       "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
       "pluginId": "cordova-plugin-device-motion",
@@ -70,6 +147,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "pluginId": "cordova-plugin-device-orientation",
       "clobbers": [
         "navigator.compass"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification",
+      "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification_android",
+      "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
       ]
     },
     {
@@ -276,6 +369,15 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "runs": true
     },
     {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open",
+        "window.open"
+      ]
+    },
+    {
       "id": "cordova-plugin-media.MediaError",
       "file": "plugins/cordova-plugin-media/www/MediaError.js",
       "pluginId": "cordova-plugin-media",
@@ -375,18 +477,31 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "Connection"
       ]
+    },
+    {
+      "id": "cordova-plugin-wifi-manager.wifiManager",
+      "file": "plugins/cordova-plugin-wifi-manager/www/wifiManager.js",
+      "pluginId": "cordova-plugin-wifi-manager",
+      "clobbers": [
+        "wifiManager"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-camera": "4.1.0",
+    "cordova-plugin-contacts": "3.0.1",
     "cordova-plugin-device-motion": "2.0.1",
     "cordova-plugin-device-orientation": "2.0.1",
+    "cordova-plugin-dialogs": "2.0.2",
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-transfer": "1.7.1",
     "cordova-plugin-geolocation": "4.0.2",
+    "cordova-plugin-inappbrowser": "3.2.0",
     "cordova-plugin-media": "5.0.3",
     "cordova-plugin-media-capture": "3.0.3",
     "cordova-plugin-network-information": "2.0.2",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-vibration": "3.1.1",
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-wifi-manager": "0.1.0"
   };
 });

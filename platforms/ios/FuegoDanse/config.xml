@@ -44,12 +44,37 @@
     <feature name="Capture">
         <param name="ios-package" value="CDVCapture" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="Vibration">
+        <param name="ios-package" value="CDVVibration" />
+    </feature>
+    <feature name="Contacts">
+        <param name="ios-package" value="CDVContacts" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="UIInAppBrowser">
+        <param name="ios-package" value="CDVUIInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="WKInAppBrowser">
+        <param name="ios-package" value="CDVWKInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
     <name>FuegoDanse</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Fuego Dance is an application to help people to get fit through the dance !
+	everyone can subscribe to this app, you need just to contact Sophia Bejok:sophiabejok@gmail.com
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="allysaidi64@gmail.com" href="http://cordova.io">
+        SAIDI ALLY AZARIA and TUNAWEZA TEAM
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -61,6 +86,10 @@
     <allow-intent href="geo:*" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
+    <icon density="ldpi" src="res/android/icon.png" />
+    <icon density="mdpi" src="res/android/icon.png" />
+    <icon density="hdpi" src="res/android/icon.png" />
+    <icon density="xhdpi" src="res/android/icon.png" />
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="DisallowOverscroll" value="false" />
@@ -76,4 +105,7 @@
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="CameraUsesGeolocation" value="false" />
     <preference name="KeepAVAudioSessionAlwaysActive" value="NO" />
+    <feature name="WiFiManager">
+        <param name="ios-package" value="SCPWiFiManagerPlugin" />
+    </feature>
 </widget>

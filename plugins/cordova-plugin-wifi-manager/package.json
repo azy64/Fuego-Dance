@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      "cordova-plugin-wifi-manager",
+      "/var/www/html/danse"
+    ]
+  ],
+  "_from": "cordova-plugin-wifi-manager@latest",
+  "_hasShrinkwrap": false,
+  "_id": "cordova-plugin-wifi-manager@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/cordova-plugin-wifi-manager",
+  "_nodeVersion": "10.14.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-wifi-manager_0.2.0_1549807278443_0.5725689026860019"
+  },
+  "_npmUser": {
+    "email": "sushifarm2012@gmail.com",
+    "name": "sushichop"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "cordova-plugin-wifi-manager",
+    "raw": "cordova-plugin-wifi-manager",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-wifi-manager/-/cordova-plugin-wifi-manager-0.2.0.tgz",
+  "_shasum": "df446bfd1ed20c5cc4cb53f395ea1a1b4f0e5e94",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-wifi-manager",
+  "_where": "/var/www/html/danse",
+  "author": {
+    "name": "Koichi Yokota"
+  },
+  "bugs": {
+    "url": "https://github.com/sushichop/cordova-plugin-wifi-manager/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-wifi-manager",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Wi-Fi Manager Plugin for Apache Cordova",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 12,
+    "integrity": "sha512-rKXzN+2uJQfr3Rg/kh6SBdvqQ678yXEyQy4YalJHNdv+jcpRx3FV6k3bIX9AQltgWC3W+tRKihC4idYHe4AK5Q==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcYC6uCRA9TVsSAnZWagAAaEcP/A73499IbpOYYh9GfU7N\n5mf2MuR/l8wmJITLzY0zzC6gwE29kFTdpC4/4UlZaiOCZOGbdDhTvaEXW/RZ\nyOcBCAtxxDmeMru8GNn6ieAT6Rz8Hhv89jp0850frzKm6djMPDBklQQUJ0YX\nTTRMSYdiuT5l9qsutd/zIe3cwVRrWIjAqxrSxXocv2+jkr7rSow5VErwxpIt\njul6411mRzZzLGFEzIjuhoxAvUhl7N9LX07anbizdPq2AGCnCUXRtszAUbiv\npej2SJl8c5cj//xFZexMwljdUQQS4rS4+p/jfdqIg55L0Jr5mDc4Fj1jU91G\nhDWdYYbVkPOcbMOXbzXMfBGZnAUIiNWcvS9GbOIrxfsJPNMvdFg5ggVGndD5\n4wLC4xwIidIzIIujzcING0S3gUUrDPqGxZ4qSxW0da0wDMn4w66EsHVyt+zs\ngaftfabtuIkVl+Wg/8FBoMva4Q3QYJ4JRs5aXLsMvq376u+QkEu8CKJWEleD\nGgobFkxnY1//LBnmtlFevG+9+sO9OZR2FAii7Rkh1hKo1vSl7DyUM64/vzgo\nMkRBVfuDswGrXd7FVF95hisEcXgfwlwJUZCkeF2c2c1GMwhAnp+e8CaB9jCj\ntRqDYNQCZoIKMFYbOUYdiy7vB9Z+ZtOlZ109ZyPAE75evwhgPcvNBQti68I3\n/Guy\r\n=XFNu\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "df446bfd1ed20c5cc4cb53f395ea1a1b4f0e5e94",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-wifi-manager/-/cordova-plugin-wifi-manager-0.2.0.tgz",
+    "unpackedSize": 19551
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "gitHead": "f76bbd5c4298b8f7d282f508e4290c0d2204fb3d",
+  "homepage": "https://github.com/sushichop/cordova-plugin-wifi-manager#readme",
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "cordova-ios",
+    "ecosystem:cordova",
+    "wifi"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "sushichop",
+      "email": "sushifarm2012@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-wifi-manager",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushichop/cordova-plugin-wifi-manager.git"
+  },
+  "scripts": {
+    "lint": "eslint 'www/**/*.js'",
+    "test": "npm run lint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "0.2.0"
+}

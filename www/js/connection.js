@@ -1,8 +1,49 @@
-localStorage.setItem("serverName","http://fuegodance.com.au/public/");
+localStorage.setItem("serverName","http://fuegodance.com.au/");
 localStorage.setItem("lastPost","");
 localStorage.setItem("contentElement","tunaweza_content");
 let BACK_TO_MENU=0;
+let id_notification=1;
 Setting={};
+Setting.setNotification=function(nombre){
+    let title="FuegoDace Notification";
+    let message="you have "+nombre+" message(s).";
+    cordova.plugins.notification.local.hasPermission(function(granted){
+        if(granted == true)
+        {
+          Setting.schedule(id_notification, title, message, new Date());
+        }
+        else
+        {
+          cordova.plugins.notification.local.registerPermission(function(granted) {
+              if(granted == true)
+              {
+                Setting.schedule(id_notification, title, message, new Date());
+              }
+              else
+              {
+                navigator.notification.alert("Reminder cannot be added because app doesn't have permission",null,"Fuegodance Notification","Well");
+              }
+          });
+        }
+      });
+      id_notification++;
+}
+Setting.schedule=function(id, title, message, schedule_time)
+{
+    cordova.plugins.notification.local.schedule({
+        id: id,
+        title: title,
+        message: message,
+        at: schedule_time,
+        icon: "img/true_logo.png"
+    });
+
+   /* var array = [id, title, message, schedule_time];
+    info.data[info.data.length] = array;
+    localStorage.setItem("rp_data", JSON.stringify(info));
+
+    navigator.notification.alert("Reminder added successfully")*/
+}
 Setting.loadTunawezaEvent=function(){
     
     $(".bulle-container img").click(function(){
@@ -32,10 +73,11 @@ Setting.getNewPost=function(){
         if(posts.length>0){
             //console.log("=================================");
             //console.log(posts);
+            Setting.setNotification(posts.length);
             Setting.getLastPostLoaded(posts);
             let contenu=Setting.envelopePost(posts);
             let cnt=localStorage.getItem("contentElement");
-            $("#welcome").fadeOut();
+            //$("#welcome").fadeOut();
             $("#"+cnt).prepend(contenu);
 
         }
@@ -102,7 +144,7 @@ Setting.loadPosts=function(){
             let w=Setting.Welcome();
             console.log("we are loading the new messages...");
             $("#"+cnt).append(contenu);
-            $("#"+cnt).prepend(w);
+            //$("#"+cnt).prepend(w);
             setInterval(Setting.getNewPost,20000);
 
         }

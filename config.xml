@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.tunaweza.danse" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.tunaweza.danse" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>FuegoDanse</name>
     <description>
         Fuego Dance is an application to help people to get fit through the dance !
@@ -23,6 +23,9 @@
     	<icon density="mdpi" src="res/android/icon.png" />
     	<icon density="hdpi" src="res/android/icon.png" />
     	<icon density="xhdpi" src="res/android/icon.png" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true"/>
+        </edit-config>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

@@ -1,0 +1,168 @@
+{
+  "_args": [
+    [
+      "cordova-plugin-vibration",
+      "/var/www/html/danse"
+    ]
+  ],
+  "_from": "cordova-plugin-vibration@latest",
+  "_hasShrinkwrap": false,
+  "_id": "cordova-plugin-vibration@3.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_integrity": "",
+  "_location": "/cordova-plugin-vibration",
+  "_nodeVersion": "12.3.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-vibration_3.1.1_1562088260532_0.43073961833202"
+  },
+  "_npmUser": {
+    "email": "piotrowski+npmjs.com@gmail.com",
+    "name": "sujan12"
+  },
+  "_npmVersion": "6.9.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "cordova-plugin-vibration",
+    "raw": "cordova-plugin-vibration",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-vibration/-/cordova-plugin-vibration-3.1.1.tgz",
+  "_shasum": "38fcdd9a7675cfb44d86339c1b2cb129017e9e00",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-vibration",
+  "_where": "/var/www/html/danse",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://issues.apache.org/jira/browse/CB"
+  },
+  "cordova": {
+    "id": "cordova-plugin-vibration",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Vibration Plugin",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 28,
+    "integrity": "sha512-qgv67Rueo4Pydfant3TwnXeFiN9dl+6lKMM6h5jYg9XewiGAGOr8vfWsTvQssC3m3xMKGS1ap3xPNH+BzZ4RMA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdG5NFCRA9TVsSAnZWagAAywsP/3dZMGk65Q/uJQUzLC8W\niqOrxG7ctmEfwIC8NzaG2xjaj4SXugAl5iozLz+u/28tSLH4BzFOXj29LsyS\niEjWBmSCyYXoKIQwf05JKy1rChHN1iEgtLp1qfXPTE9gPio3I/YGlkE4w9nt\nij1mMrhYICmgE/aebhhd/wqZLJ8TMjaA3oYqvkEf+aQiXNfr01H4gzxPZdvw\nXo1mDux+PO6KV0cQCxZwZBj2NOP8S4sVpvvrdMDdhTIhjuqbonL2ZvPBAGcL\n6vH5cvtM823TAwsBzIDsuf2prLgN75IyhF/si0GQveLV2LPISI7p7r96D0hU\nIscd4vTzgTe1u1yVRbuBXLoVy02PKPhD8oNdPCO4EDCwxCpvMLOK/9ArEIyA\nIB/6iYRYfkrJJG2AKGt7mC2MT6an2An2MJBrQDdlXyL660RJcC+itfuMeHw+\neawESkl8+QCEJ6YyvF0oNFx6BFhWYrAe6dcwi5kr1UMibtHjlNrn+FGUroRd\nL1BGDVWW2QrqM/Vsx0uyy8kW+i4nFl6ZE2/JvpECSnbqNvFDHEIKDUbY9ID2\nevfE/iboCsnWLUpWUIF7ji+hSvNB7X9BExY/kwDEe5JeuREqmh/m/kijJJcq\ns40H7tCqvoxzodf8Wrv6ItDpH4WrPc00POazF/7j9+f0jG0SfRrLZNwsZ+4o\nns8z\r\n=rI6G\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "38fcdd9a7675cfb44d86339c1b2cb129017e9e00",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-vibration/-/cordova-plugin-vibration-3.1.1.tgz",
+    "unpackedSize": 75097
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "4.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-vibration#readme",
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows",
+    "ecosystem:cordova",
+    "vibration"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "filmaj",
+      "email": "maj.fil@gmail.com"
+    },
+    {
+      "name": "anis",
+      "email": "anis.kadri@gmail.com"
+    },
+    {
+      "name": "brodybits",
+      "email": "chris@brody.consulting"
+    },
+    {
+      "name": "cordovaowner",
+      "email": "apachecordovabot@gmail.com"
+    },
+    {
+      "name": "csantanapr",
+      "email": "csantana23@gmail.com"
+    },
+    {
+      "name": "dpogue",
+      "email": "darryl@dpogue.ca"
+    },
+    {
+      "name": "erisu",
+      "email": "erisu.dev@outlook.jp"
+    },
+    {
+      "name": "bowserj",
+      "email": "bowserj@apache.org"
+    },
+    {
+      "name": "jcesarmobile",
+      "email": "jcesarmobile@gmail.com"
+    },
+    {
+      "name": "macdonst",
+      "email": "simon.macdonald@gmail.com"
+    },
+    {
+      "name": "purplecabbage",
+      "email": "purplecabbage@gmail.com"
+    },
+    {
+      "name": "shazron",
+      "email": "shazron@gmail.com"
+    },
+    {
+      "name": "stevegill",
+      "email": "stevengill97@gmail.com"
+    },
+    {
+      "name": "sujan12",
+      "email": "piotrowski+npmjs.com@gmail.com"
+    },
+    {
+      "name": "surajpindoria",
+      "email": "suraj.pindoria@yahoo.com"
+    }
+  ],
+  "name": "cordova-plugin-vibration",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-vibration.git"
+  },
+  "scripts": {
+    "eslint": "eslint www && eslint src && eslint tests",
+    "test": "npm run eslint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "3.1.1"
+}

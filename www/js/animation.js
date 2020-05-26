@@ -40,6 +40,7 @@ $("#login").click(function(event){
     $("#loader").fadeIn();
     $.getJSON(server+"getstudent/"+email+"/"+pass+"",function(data, statut){
         data=JSON.parse(data);
+        //alert(data);
         //console.log("voici la donnée:");
         //console.log(data);
         if(data.id){
@@ -49,12 +50,14 @@ $("#login").click(function(event){
         }
         else{
             alert("Your email address or your \n password is incorrect")
+            $("#tunaweza_first").fadeOut();
         }
         //console.log(data.login);
     })
     .done(function(){$("#loader").fadeOut()})
     .fail(function(xhr,statut,msg){
-        alert("Please check your connexion");
+        alert("Please check your connexion \n because we can't etablish the connection with:"+server+"getstudent/"+email+"/"+pass+"");
+        $("#tunaweza_first").fadeOut();
     });
     
     //$("#tunaweza_first").fadeOut();
@@ -145,6 +148,19 @@ function loadTunawezaEvent(m){
 
 }
 
+/*here we define a function to close the cordova app*/
+function ExitApp(){
+    if (navigator.app) {
+        ///alert("c'est ici");
+        navigator.app.exitApp();
+    }
+    else if (navigator.device) {
+        navigator.device.exitApp();
+    }
+    else {
+        window.close();
+    }
+}
 /*
 *here we handle when the user click on the back button
 **/
@@ -154,11 +170,16 @@ function onLoad() {
 function onDeviceReady(){
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
-function onBackKeyDown(){
+function onBackKeyDown(e){
+    e.preventDefault();
+    //alert("voulez vous quiter ?");
     if(BACK_TO_MENU!=0){
         BACK_TO_MENU=0;
         stopAllVideo();
         leftToRight("tunaweza_second");
+    }
+    else{
+        ExitApp();
     }
 }
 

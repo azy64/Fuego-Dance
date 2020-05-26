@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src '*'">-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>danse</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <style>
-        </style>
+        <script type="text/javascript" src="cordova.js"></script>
     </head>
     <body onload="onLoad()">
         <div id="tunaweza_first">
@@ -19,7 +19,7 @@
             <div class="row ">
                 <div class="col-12 col-sm-12 col-lg-12 ">
                     <h3 class="h3 text-center" style="color: #fff;">WELCOME</h3>
-                    <form style="width: 65%;margin:auto">
+                    <div style="width: 65%;margin:auto" role="form">
                         <div class="form-group">
                           <!--<label for="formGroupExampleInput">Example label</label>-->
                           <input type="email" class="form-control" id="email" placeholder="Your email">
@@ -30,7 +30,7 @@
                         </div>
                         <button class="tunaweza_login" id="login" >Sing In</button>
                         <!--a href="" class="link">Sign Up</a>-->
-                      </form>
+                    </div>
                 </div>
                 
             </div>
@@ -41,7 +41,7 @@
                 <img src="img/true_logo.png" alt="" width="70%">
             </div>
             <div class="tunaweza_block_tail text-center">
-                <button class="tunaweza_button_menu"  id="m1">What New</button>
+                <button class="tunaweza_button_menu"  id="m1">What's New</button>
             </div>
             <div class="tunaweza_block_tail text-center">
                 <button class="tunaweza_button_menu" id="m2" >About Fuego Dance</button>
@@ -53,7 +53,7 @@
         <div id="tunaweza_third">
             <div class="tunaweza_bar">
                 <button id="retour" class="" style="background: transparent;border:none;vertical-align:top;"><img src="img/left1.png" width="20px" ></button>
-                <span class="float-center" style="color: #fff;font-size:1.3em;font-weight:bold;display:inline-block;width:75%;text-align:center;">What New</span>
+                <span class="float-center" style="color: #fff;font-size:1.3em;font-weight:bold;display:inline-block;width:75%;text-align:center;">What's New</span>
             </div>
             <div class="tunaweza_container_content">
                 <div id="tunaweza_content">

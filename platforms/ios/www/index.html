@@ -2,55 +2,25 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src '*'">-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>danse</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <style>
-            /*[class*="col-"],*/form, img {
-                border: 1px solid transparent;
-            }
-            input{
-                height: 60px;
-            }
         </style>
     </head>
-    <body>
-        <!--<div class="container-fluid position-fixed mt-5" id="tunaweza_first"> 
-                <div class="col-12 col-sm-12 col-lg-12 text-center">
-                    <img src="img/logo_app.png" alt="" width="245px" class="rounded-circle">
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-12 col-sm-12 col-lg-12 ">
-                    <h3 class="h3 text-center">WELCOME</h3 class="">
-                    <form>
-                        <div class="form-group">
-                          <label for="formGroupExampleInput">Example label</label>
-                          <input type="email" class="form-control" id="email" placeholder="Your email">
-                        </div>
-                        <div class="form-group">
-                         <label for="formGroupExampleInput2">Another label</label>
-                          <input type="password" class="form-control" id="password" placeholder="Your password">
-                        </div>
-                        <button class="btn btn-primary">Sing In</button>
-                        <a href="" class="link">Sign Up</a>
-                      </form>
-                </div>
-                
-            </div>-->
-        
-        <!--</div>-->
+    <body onload="onLoad()">
         <div id="tunaweza_first">
             <div class="container-fluid"> 
                 <div class="col-12 col-sm-12 col-lg-12 text-center">
-                    <img src="img/logo_f.png" alt="" width="245px" >
+                    <img src="img/true_logo.png" alt="" width="245px" >
                 </div>
             </div>
             <div class="row ">
                 <div class="col-12 col-sm-12 col-lg-12 ">
-                    <h3 class="h3 text-center">WELCOME</h3>
-                    <form style="width: 65%;margin:auto">
+                    <h3 class="h3 text-center" style="color: #fff;">WELCOME</h3>
+                    <div style="width: 65%;margin:auto" role="form">
                         <div class="form-group">
                           <!--<label for="formGroupExampleInput">Example label</label>-->
                           <input type="email" class="form-control" id="email" placeholder="Your email">
@@ -59,44 +29,61 @@
                           <!--<label for="formGroupExampleInput2">Another label</label>-->
                           <input type="password" class="form-control" id="password" placeholder="Your password">
                         </div>
-                        <button class="btn btn-primary" id="login" >Sing In</button>
-                        <a href="" class="link">Sign Up</a>
-                      </form>
+                        <button class="tunaweza_login" id="login" >Sing In</button>
+                        <!--a href="" class="link">Sign Up</a>-->
+                    </div>
                 </div>
                 
             </div>
         </div>
         <div id="tunaweza_second">
-           <div class="tunaweza_nav">
-            <div class="tunaweza_nav_haut">
-                <div class="row pt-1 pl-2">
-                    <div class="col-8 ">
-                        <h3>
-                            <spam style="color: #8ca5d2;">FUEGO</spam><spam style="color: #f1592a;"> DANCE</spam>
-                        </h3>                        
-                    </div>
-                    <!--<div class="col-2 offset-4 align-bottom"><img src="img/loupe.png" alt="loupe" width="20px"></div>
-                    <div class="col-2 align-bottom"><img src="img/menu.png" alt="menu" width="20px"></div>-->
+           <!--- <div class="tunaweza_block_tail"></div>-->
+            <div class="tunaweza_block_tail text-center" style="padding-top: 5%;">
+                <img src="img/true_logo.png" alt="" width="70%">
+            </div>
+            <div class="tunaweza_block_tail text-center">
+                <button class="tunaweza_button_menu"  id="m1">What New</button>
+            </div>
+            <div class="tunaweza_block_tail text-center">
+                <button class="tunaweza_button_menu" id="m2" >About Fuego Dance</button>
+            </div>
+            <div class="tunaweza_block_tail text-center">
+                <button class="tunaweza_button_menu" id="m3" >Get in Touch</button>
+            </div>
+        </div>
+        <div id="tunaweza_third">
+            <div class="tunaweza_bar">
+                <button id="retour" class="" style="background: transparent;border:none;vertical-align:top;"><img src="img/left1.png" width="20px" ></button>
+                <span class="float-center" style="color: #fff;font-size:1.3em;font-weight:bold;display:inline-block;width:75%;text-align:center;">What New</span>
+            </div>
+            <div class="tunaweza_container_content">
+                <div id="tunaweza_content">
+                    
                 </div>
+                
             </div>
-            <div class="tunaweza_nav_bas">
-                <div class="tunaweza_block line_height"  ><a id="menu1" href="#">What News</a></div>
-                <div class="tunaweza_block line_height"  ><a id="menu2" href="#">About Us</a></div>
-                <div class="tunaweza_block line_height" ><a id="menu3" href="#">Contact Us</a></div>
+        </div>
+        <div id="tunaweza_fourth">
+            <div class="tunaweza_bar">
+                <button id="retoure" class="" style="background: transparent;border:none;vertical-align:top;"><img src="img/left1.png" width="20px" ></button>
+                <span id="title" class="float-center" style="color: #fff;font-size:1.3em;font-weight:bold;display:inline-block;width:75%;text-align:center;">What New</span>
             </div>
-            <div class="tunaweza_nav_bar">
-                <div class="tunaweza_nav_bar_scroll" id="roule"></div>
+            <div class="tunaweza_container_content">
+                <div id="tunaweza_content_fourth">
+                    
+                </div>
+                
             </div>
-           </div>
-           <!--ici commence le code html pour l'affichage du contenu-->
-           <div data-role="page" class="tunaweza_contener_content" id="slide">
-                <div id="c1" class="tunaweza_content">1</div>
-                <div id="c2" class="tunaweza_content">2</div>
-                <div id="c3" class="tunaweza_content">3</div>
-           </div>
+        </div>
+        <div id="visuel">
+            <img src="">
+        </div>
+        <div id="loader" class="text-center">
+            <img src="img/loader.gif" width="70%">
         </div>
     </body>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery1.js"></script>
+    <script type="text/javascript" src="js/connection.js"></script>
     <script type="text/javascript" src="js/animation.js"></script>
 </html>

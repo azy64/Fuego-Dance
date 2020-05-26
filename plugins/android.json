@@ -11,10 +11,16 @@
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.tunaweza.danse"
     },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
     "cordova-plugin-device-motion": {
       "PACKAGE_NAME": "com.tunaweza.danse"
     },
     "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.tunaweza.danse"
     },
     "cordova-plugin-file": {
@@ -26,13 +32,25 @@
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.tunaweza.danse"
     },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
     "cordova-plugin-media": {
       "PACKAGE_NAME": "com.tunaweza.danse"
     },
     "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.tunaweza.danse"
     },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.tunaweza.danse"
+    },
+    "cordova-plugin-wifi-manager": {
       "PACKAGE_NAME": "com.tunaweza.danse"
     }
   },
